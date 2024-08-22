@@ -1,0 +1,212 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    margin-top: 10px;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 200px;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    display: block;
+}
+
+/* User Icon Styles */
+.user-icon {
+    margin-left: auto;
+    position: relative;
+}
+
+.user-icon a {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon i {
+    font-size: 20px;
+}
+
+.user-icon .dropdown {
+    right: 0;
+    top: 40px;
+    text-align: left;
+    width: 220px;
+}
+
+/* ID Card Styles */
+.id-card {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.id-card .header {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.id-card .header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.id-card .header .logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.id-card .header h2 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.id-card .header h1 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.id-card .profile {
+    margin-top: -30px;
+}
+
+.id-card .profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.id-card .details {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.id-card .details p {
+    margin: 5px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.id-card .details p strong {
+    color: #003366;
+}
+
+/* Main Content Styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #575757;
+}
+
+.container {
+    max-width: none;
+    margin: none;
+    background: none;
+    padding: none;
+    box-shadow: none;
+}

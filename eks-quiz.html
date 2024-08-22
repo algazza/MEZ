@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- =================== Icon CSS ===================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin=""
+    />
+    <!-- ==================== Math Font ==================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+      integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+      integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+      integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+    <!-- ==================== CSS Tailwind Component ===================== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Math Equate Zone</title>
+  </head>
+  <body class="bg-krem grain text-base hitam">
+    <header class="fixed w-full z-50">
+      <nav
+        class="flex items-center justify-between bg-krem border-hitam lg:px-12 px-8 py-4"
+      >
+        <div
+          class="cursor-pointer place-items-center hitam lg:hidden"
+          id="nav-menu-icon"
+        >
+          <i class="ri-menu-2-line"></i>
+        </div>
+
+        <div
+          class="max-lg:fixed max-lg:top-0 max-lg:-left-full max-lg:bg-krem max-lg:h-full max-lg:w-auto max-lg:border-hitam max-lg:pt-10 max-lg:p-8 max-lg:pr-6 max-lg:flex-col max-lg:justify-between flex lg:gap-12 transition-left duration-500"
+          id="nav-menu"
+        >
+          <div class="hitam flex justify-between max-lg:pb-9 max-lg:gap-x-5">
+            <div class="flex gap-x-4">
+              <img src="./image/logo MEZ 2.png" alt="MEZ" class="w-6" />
+              <span class="lg:hidden font-bold">Math Equate Zone</span>
+            </div>
+
+            <div
+              class="cursor-pointer place-items-center hitam lg:hidden font-medium"
+              id="nav-close"
+            >
+              <i class="ri-close-line"></i>
+            </div>
+          </div>
+
+          <ul class="flex flex-col lg:flex-row gap-6">
+            <li class="">
+              <a href="./home.html" class="flex gap-x-6 nav_link">
+                <i class="ri-home-2-line lg:hidden"></i>
+                <span class="font-medium">Home</span>
+              </a>
+            </li>
+
+            <li class="">
+              <a href="./about.html" class="flex gap-x-6 nav_link">
+                <i class="ri-question-mark lg:hidden"></i>
+                <span class="font-medium">About</span>
+              </a>
+            </li>
+
+            <li class="grid gap-2 lg:hidden">
+              <a href="#" class="cursor-pointer flex">
+                <i class="ri-book-open-line lg:hidden"></i>
+                <span class="font-medium ml-6 lg:ml-0 mr-1">Material</span>
+              </a>
+              <ul
+                class="bg-krem border-hitam-kiri w-52 pl-4 flex flex-col gap-4 z-[1]"
+              >
+                <li class="">
+                  <a href="./linear.html" class="flex items-center gap-x-4 nav_link">
+                    <i
+                      class="fa-solid fa-xmark rounded-md p-2 bg-color-1-50"
+                    ></i>
+                    <span class="font-medium">Persamaan Linear</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="./eks.html" class="flex items-center gap-x-4 nav_link">
+                    <i
+                      class="fa-solid fa-superscript rounded-md p-2 bg-color-2-50"
+                    ></i>
+                    <span class="font-medium">Eksponen</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="./log.html" class="flex items-center gap-x-4 nav_link">
+                    <i
+                      class="fa-solid fa-subscript rounded-md p-2 bg-color-3-50"
+                    ></i>
+                    <span class="font-medium">Logaritma</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <details class="dropdown max-lg:hidden">
+              <summary href="#" class="cursor-pointer flex">
+                <i class="ri-book-open-line lg:hidden"></i>
+                <span class="font-medium ml-6 lg:ml-0 mr-1">Material</span>
+                <i class="ri-arrow-down-s-line"></i>
+              </summary>
+              <ul
+                class="bg-krem dropdown-content rounded-xl border-hitam w-52 p-4 flex flex-col gap-4 z-[1]"
+              >
+                <li class="">
+                  <a href="" class="flex items-center gap-x-4 nav_link">
+                    <i
+                      class="fa-solid fa-xmark rounded-md p-2 bg-color-1-50"
+                    ></i>
+                    <span class="font-medium">Persamaan Linear</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="" class="flex items-center gap-x-4 nav_link">
+                    <i
+                      class="fa-solid fa-superscript rounded-md p-2 bg-color-2-50"
+                    ></i>
+                    <span class="font-medium">Eksponen</span>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="" class="flex items-center gap-x-4 nav_link">
+                    <i
+                      class="fa-solid fa-subscript rounded-md p-2 bg-color-3-50"
+                    ></i>
+                    <span class="font-medium">Logaritma</span>
+                  </a>
+                </li>
+              </ul>
+            </details>
+
+            <li class="">
+              <a href="./contact.html" class="flex gap-x-6 nav_link">
+                <i class="ri-chat-4-line lg:hidden"></i>
+                <span class="font-medium">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <div
+            class="lg:hidden lg:absolute lg:right-6 lg:top-16 lg:bg-krem lg:p-4 lg:border-hitam lg:rounded-xl flex flex-col gap-4 transition-all ease-in-out duration-500"
+            id="card-login"
+          >
+            <div
+              class="border-hitam flex flex-col items-center p-2 w-full rounded-xl"
+            >
+              <h3 class="font-medium">WELCOME</h3>
+              <h1 class="font-bold">FADHIL AL GHAZA</h1>
+              <img
+                src="./image/signature-removebg-preview.png"
+                alt=""
+                class="w-30 h-20"
+              />
+            </div>
+            <a class="border-hitam p-2 rounded-3xl flex justify-center">
+              Logout
+            </a>
+          </div>
+        </div>
+
+        <a class="font-bold lg:hidden">
+          <span>Math Equate Zone</span>
+        </a>
+
+        <div class="cursor-pointer" id="user">
+          <i class="ri-user-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="overflow-hidden mx-4">
+      <section
+        class="py-20 border-hitam-bawah flex flex-col gap-4 items-center"
+      >
+        <h1 class="text-2xl font-bold text-center">Quizz Timezz</h1>
+
+        <div
+          class="container bg-putih border-hitam rounded-xl p-8 w-[90%] max-w-[600px]"
+        >
+          <h1 class="text-xl font-semibold text-center" id="question-numb2-4">
+            1/5
+          </h1>
+          <div class="py-5">
+            <h2 class="text-xl font-semibold" id="question2-4"></h2>
+
+            <div class="hitam text-xl" id="answer2-4"></div>
+
+            <div class="flex items-center">
+              <button
+                class="font-semibold bg-color-3-50 w-[150px] border-hitam p-3 mx-auto my-2 rounded-sm cursor-pointer hidden"
+                id="next-button2-4"
+              >
+                Lanjut
+              </button>
+            </div>
+
+            <div class="grid items-center py-2" id="explain-div2-4">
+              <h3 class="text-2xl font-bold pb-4">Prof.Mezo Here!</h3>
+              <div class="" id="explain2-4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ======================== Gsap Lenis =================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <!-- =================== Typed Js =========================== -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- =================== Javascript =================== -->
+    <script src="./js/script.js"></script>
+    <script src="./js/quiz2-4.js"></script>
+  </body>
+</html>
